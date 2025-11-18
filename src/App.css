@@ -1,0 +1,20 @@
+.header-thang {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.header-thang2 {
+    background-color: #f3f4f6;
+    border-bottom: 1px solid #e5e7eb;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    position: fixed;   /* <-- sticks to top while scrolling */
+    top: 0;            /* anchor it to the top */
+    left: 0;
+    width: 100%;       /* full-width navbar */
+    z-index: 999;      /* stays above other content */
+}

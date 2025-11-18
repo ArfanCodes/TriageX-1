@@ -1,0 +1,84 @@
+.hero {
+  position: relative;
+  padding: 120px 20px;
+  background: #ffffff;
+  overflow: hidden;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;}
+
+/* Soft curved background lines */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, #f0f4f8, #d9e2ec);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  left: -400px;
+}
+
+/* Typography */
+.hero-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #111;
+  align-items: flex-start;
+}
+
+.title-highlight {
+  display: block;
+  font-weight: 700;
+  font-size: 64px;
+  margin-top: 5px;
+  color: #2b2f36;
+}
+
+.hero-subtitle {
+  margin-top: 20px;
+  font-size: 18px;
+  max-width: 600px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* CTA Button */
+.hero-cta {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background: #ff7d00;
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.hero-cta:hover {
+  background: #ff8f22;
+}
+
+.slashes {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+  .title-highlight {
+    font-size: 48px;
+  }
+}
