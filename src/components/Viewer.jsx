@@ -5,7 +5,7 @@ function Viewer({ scan }) {
 
   if (!scan) {
     return (
-      <div className="bg-card border border-border rounded-lg h-full flex items-center justify-center">
+<div className="bg-card border border-border rounded-lg h-full flex items-center justify-center">
         <div className="text-center text-muted-foreground">
           <svg
             className="w-16 h-16 mx-auto mb-4 opacity-50"
